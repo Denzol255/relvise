@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'icons';
+  font-display: swap;
+  src: url('../fonts/icons.woff') format('woff'),
+    url('../fonts/icons.woff2#icons') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+%ic {
+  font-family: 'icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^='_icon-'],
+[class*=' _icon-'] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+
+._icon-alarm:before {
+  content: '\e900';
+}
+._icon-aws:before {
+  content: '\e901';
+}
+._icon-hooli:before {
+  content: '\e902';
+}
+._icon-lyft:before {
+  content: '\e903';
+}
+._icon-map:before {
+  content: '\e904';
+}
+._icon-people:before {
+  content: '\e905';
+}
+._icon-phone:before {
+  content: '\e906';
+}
+._icon-piper-hat:before {
+  content: '\e907';
+}
+._icon-reddit:before {
+  content: '\e908';
+}
+._icon-send:before {
+  content: '\e909';
+}
+._icon-speed:before {
+  content: '\e90a';
+}
+._icon-stripe:before {
+  content: '\e90b';
+}

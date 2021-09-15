@@ -1,0 +1,126 @@
+.page {
+  // .page__advices
+
+  &__advices {
+  }
+}
+
+.advices {
+  padding: 125px 0 80px;
+
+  @media (max-width: $md2) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $md3) {
+    padding: 40px 0;
+  }
+
+  @media (max-width: $md4) {
+    padding: 0 0 20px;
+  }
+
+  // .advices__container
+
+  &__container {
+  }
+
+  // .advices__head-content
+
+  &__head-content {
+    margin: 0 0 45px;
+  }
+
+  // .advices__cards
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px -30px;
+
+    @media (max-width: 630px) {
+      margin: 0 0 -15px;
+    }
+  }
+
+  // .advices__card
+
+  &__card {
+  }
+}
+
+.card-advices {
+  flex: 0 1 25%;
+  padding: 0 20px;
+
+  @media (max-width: $md2) {
+    flex: 0 1 50%;
+    margin: 0 0 30px;
+  }
+
+  @media (max-width: 630px) {
+    flex: 0 1 100%;
+    margin: 0 0 15px;
+    padding: 0;
+  }
+
+  // .card-advices__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  // .card-advices__content
+
+  &__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  // .card-advices__link
+
+  &__link {
+    display: inline-block;
+    color: inherit;
+
+    &:not(:last-child) {
+      margin: 0 0 15px;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+        color: $greenColor;
+      }
+    }
+  }
+
+  // .card-advices__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px / 16px * 100%;
+    letter-spacing: 0.1px;
+  }
+
+  // .card-advices__text
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px / 14px * 100%;
+    color: $grayTextColor;
+  }
+
+  // .card-advices__image
+
+  &__image {
+    padding-bottom: 59.4%;
+  }
+}

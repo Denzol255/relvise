@@ -1,0 +1,22 @@
+@import '_vendors.scss';
+@import 'mixins.scss';
+@import 'fonts.scss';
+@import 'icons.scss';
+@import 'null.scss';
+@import 'settings.scss';
+@import 'header-burger.scss';
+
+// Header
+@import 'blocks/header.scss';
+
+// Main-block
+@import 'blocks/main-block.scss';
+
+// Advantages-block
+@import 'blocks/advantages.scss';
+
+// Achievements-block
+@import 'blocks/achievements.scss';
+
+// Advices-block
+@import 'blocks/advices.scss';

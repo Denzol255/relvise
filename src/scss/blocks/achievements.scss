@@ -1,0 +1,112 @@
+.page {
+  // .page__achievements
+
+  &__achievements {
+  }
+}
+
+.achievements {
+  padding: 80px 0;
+
+  @media (max-width: $md3) {
+    padding: 60px 0;
+  }
+
+  // .achievemnts__container
+
+  &__container {
+  }
+
+  // .achievements__body
+
+  &__body {
+  }
+
+  // .achievemnts__head-content
+
+  &__head-content {
+    margin: 0 0 50px;
+    @media (max-width: $md4) {
+      margin: 0 0 20px;
+    }
+  }
+
+  // .achievemnts__content-cards
+
+  &__content-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    @media (max-width: 1030px) {
+      margin: 0 -15px -30px;
+    }
+
+    @media (max-width: 550px) {
+      margin: 0;
+    }
+  }
+
+  // .achievemnts__content-card
+
+  &__content-card {
+    @media (max-width: 1030px) {
+      margin: 0 0 10px;
+    }
+
+    @media (max-width: 550px) {
+      margin: 0 0 15px;
+    }
+  }
+}
+
+.content-card {
+  flex: 0 1 25%;
+  padding: 0 15px;
+
+  @media (max-width: 1030px) {
+    flex: 0 1 50%;
+  }
+
+  @media (max-width: 550px) {
+    flex: 0 1 100%;
+    padding: 0;
+  }
+
+  // .content-card__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+    & > * {
+      &:not(:last-child) {
+        margin: 0 0 10px;
+      }
+    }
+  }
+
+  // .content-card__image
+
+  &__image {
+  }
+
+  // .content-card__number
+
+  &__number {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px / 40px * 100%;
+  }
+
+  // .content-card__text
+
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px / 16px * 100%;
+    color: $grayTextColor;
+  }
+}
