@@ -28,7 +28,7 @@
   &__logo {
     font-weight: 700;
     font-size: 24px;
-    line-height: 32px;
+    line-height: math.div(32px, 24px) * 100%;
     letter-spacing: 0.1px;
   }
 
@@ -84,7 +84,7 @@
 
   &__item {
     font-weight: 600;
-    line-height: 24px / 14px * 100%;
+    line-height: math.div(24px, 14px) * 100%;
     letter-spacing: 0.2px;
     color: $grayTextColor;
     transition: all 0.3s ease 0s;

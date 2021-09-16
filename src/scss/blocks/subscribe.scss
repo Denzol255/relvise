@@ -1,0 +1,153 @@
+.page {
+  // .page__subscribe
+
+  &__subscribe {
+  }
+}
+
+.subscribe {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 47.5%;
+    background-color: $mainColor;
+  }
+
+  // .subscribe__container
+
+  &__container {
+  }
+
+  // .subscribe__wrapper
+
+  &__wrapper {
+    padding: 20px 32px;
+
+    @media (max-width: $md4) {
+      padding: 0;
+    }
+  }
+
+  // .subscribe__body
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2px;
+    padding: 30px 50px;
+    background-color: $darkBlueColor;
+
+    @media (max-width: $md2) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 600px) {
+      border-radius: 5px;
+      padding: 20px;
+    }
+  }
+
+  // .subscribe__title
+
+  &__title {
+    max-width: 266px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: math.div(32px, 24px) * 100%;
+    letter-spacing: 0.1px;
+    color: #fff;
+
+    @media (max-width: $md2) {
+      max-width: 100%;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin: 0 0 30px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      font-size: 22px;
+    }
+  }
+
+  // .subscribe__form
+
+  &__form {
+    position: relative;
+    flex: 0 0 450px;
+    margin: 0 0 0 10px;
+    height: 58px;
+
+    @media (max-width: $md2) {
+      flex: 0 0 58px;
+      margin: 0;
+      width: 100%;
+      max-width: 450px;
+    }
+
+    @media (max-width: 600px) {
+      flex: 0 0 116px;
+    }
+  }
+
+  // .subscribe__input
+
+  &__input {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 0 127px 0 20px;
+    width: 100%;
+    height: 58px;
+    font-size: 14px;
+    line-height: math.div(28px, 14px) * 100%;
+    letter-spacing: 0.2px;
+    color: $grayTextColor;
+    background-color: #f9f9f9;
+
+    @media (max-width: 600px) {
+      border: none;
+      border-radius: 5px 5px 0 0;
+      padding: 0 20px;
+    }
+  }
+
+  // .subscribe__button
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 0 5px 5px 0;
+    width: 117px;
+    height: 100%;
+    font-size: 14px;
+    line-height: math.div(28px, 14px) * 100%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #fff;
+    background-color: $orangeColor;
+    transition: background-color 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #df6333;
+      }
+    }
+
+    @media (max-width: 600px) {
+      top: 50%;
+      border: none;
+      border-radius: 0 0 5px 5px;
+      width: 100%;
+      height: 50%;
+    }
+  }
+}

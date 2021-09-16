@@ -1,3 +1,8 @@
+@use "sass:list";
+@use "sass:math";
+
+// Using Sass:math and sass:list for correct indication of division
+
 @import '_vendors.scss';
 @import 'mixins.scss';
 @import 'fonts.scss';
@@ -20,3 +25,15 @@
 
 // Advices-block
 @import 'blocks/advices.scss';
+
+// We-are-block
+@import 'blocks/we-are.scss';
+
+// Clients-block
+@import 'blocks/clients.scss';
+
+// Subscribe-block
+@import 'blocks/subscribe.scss';
+
+// Subscribe-block
+@import 'blocks/support.scss';

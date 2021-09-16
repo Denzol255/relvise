@@ -48,7 +48,7 @@ body {
   &__title {
     font-weight: 700;
     font-size: 40px;
-    line-height: 57px / 40px * 100%;
+    line-height: math.div(57px, 40px) * 100%;
     color: $mainColor;
 
     &:not(:last-child) {
@@ -69,7 +69,7 @@ body {
   &__text {
     font-weight: 500;
     font-size: 14px;
-    line-height: 20px / 14px * 100%;
+    line-height: math.div(20px, 14px) * 100%;
     color: $grayTextColor;
   }
 }

@@ -1,0 +1,36 @@
+.page {
+  // .page__clients
+
+  &__clients {
+  }
+}
+
+.clients {
+  padding: 50px 0;
+
+  // .clients__container
+
+  &__container {
+  }
+
+  // .clients__items
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .clients__item
+
+  &__item {
+    flex: 0 1 16.667%;
+    padding: 8px 15px;
+    min-width: 140px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

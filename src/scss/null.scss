@@ -66,6 +66,10 @@ input::-ms-clear {
   display: none;
 }
 
+input {
+  outline: none;
+}
+
 button {
   background-color: inherit;
   cursor: pointer;

@@ -41,7 +41,7 @@
   &__title {
     font-weight: 800;
     font-size: 58px;
-    line-height: 80px / 58px * 100%;
+    line-height: math.div(80px, 58px) * 100%;
     letter-spacing: 0.2px;
     color: $mainColor;
 
@@ -55,7 +55,7 @@
   &__text {
     font-weight: 500;
     font-size: 20px;
-    line-height: 30px / 20px * 100%;
+    line-height: math.div(30px, 20px) * 100%;
     color: $grayTextColor;
 
     @media (max-width: $md4) {

@@ -79,6 +79,7 @@ const plugins = () => {
   const base = [
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
+      filename: 'index.html',
       inject: 'body',
       minify: {
         collapseWhitespace: isProd,
@@ -110,8 +111,9 @@ module.exports = {
   mode: 'development',
   target: target,
   output: {
-    path: path.resolve(__dirname, 'dist'),
     filename: `./js/${filename('.js')}`,
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '',
     clean: true,
   },
   resolve: {
@@ -135,6 +137,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
+        exclude: /node_modules/,
         loader: 'html-loader',
       },
       {
@@ -155,7 +158,7 @@ module.exports = {
         }),
       },
       {
-        test: /\.(?:ico|png|svg|jpeg|jpg|webp|gif)$/i,
+        test: /\.(?:|ico|png|svg|jpeg|jpg|webp|gif)$/i,
         type: 'asset/resource',
         generator: {
           filename: `./img/${filename('[ext]')}`,

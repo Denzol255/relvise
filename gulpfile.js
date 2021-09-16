@@ -17,8 +17,9 @@ let path = {
     images: src_folder + '/new/',
   },
   src: {
-    images: [
-      src_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
+    towebp: [src_folder + '/img/**/*.{jpg,png,webp}', '!**/favicon.*'],
+    other: [
+      src_folder + '/img/**/*.{jpg,png,webp,svg,gif,ico}',
       '!**/favicon.*',
     ],
   },
@@ -36,7 +37,7 @@ async function renameDir() {
 }
 
 function images() {
-  return src(path.src.images)
+  return src(path.src.towebp)
     .pipe(newer(path.build.images))
     .pipe(
       imagemin([
@@ -53,7 +54,7 @@ function images() {
     .pipe(dest(path.build.images))
     .pipe(src(path.clean))
     .pipe(clean(path.clean))
-    .pipe(src(path.src.images))
+    .pipe(src(path.src.other))
     .pipe(newer(path.build.images))
     .pipe(
       imagemin({
