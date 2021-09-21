@@ -1,5 +1,5 @@
-@use "sass:list";
-@use "sass:math";
+@use 'sass:list';
+@use 'sass:math';
 
 // Using Sass:math and sass:list for correct indication of division
 
@@ -10,6 +10,8 @@
 @import 'null.scss';
 @import 'settings.scss';
 @import 'header-burger.scss';
+@import '_modal.scss';
+@import '_loader.scss';
 
 // Header
 @import 'blocks/header.scss';
@@ -37,3 +39,9 @@
 
 // Subscribe-block
 @import 'blocks/support.scss';
+
+// Contact-block
+@import 'blocks/contact.scss';
+
+// Footer-block
+@import 'blocks/footer.scss';

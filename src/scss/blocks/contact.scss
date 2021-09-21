@@ -1,0 +1,97 @@
+.page {
+  // .page__contact
+
+  &__contact {
+  }
+}
+
+.contact {
+  padding: 40px 0;
+
+  // .contact__container
+
+  &__container {
+  }
+
+  // .contact__body
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 19px 0 0;
+
+    @media (max-width: $md3) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+    }
+
+    @media (max-width: $md4) {
+      align-items: center;
+    }
+  }
+
+  // .contact__content
+
+  &__content {
+    @media (max-width: $md3) {
+      margin: 0 0 30px;
+    }
+
+    @media (max-width: $md4) {
+      text-align: center;
+    }
+  }
+
+  // .contact__title
+
+  &__title {
+    margin: 0 10px 10px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: math.div(32px, 24px) * 100%;
+    letter-spacing: 0.1px;
+  }
+
+  // .contact__text
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: math.div(20px, 14px) * 100%;
+    letter-spacing: 0.2px;
+    color: $grayTextColor;
+  }
+
+  // .contact__button
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 15px 40px;
+    min-height: 58px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: math.div(20px, 14px) * 100%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #fff;
+    background-color: $orangeColor;
+    transition: background-color 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #e95f28;
+      }
+    }
+
+    @media (max-width: $md4) {
+      align-self: stretch;
+      max-width: 100%;
+    }
+  }
+}

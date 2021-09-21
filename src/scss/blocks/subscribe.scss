@@ -28,7 +28,8 @@
   &__wrapper {
     padding: 20px 32px;
 
-    @media (max-width: $md4) {
+    @media (max-width: $md2) {
+      margin: 0 -15px;
       padding: 0;
     }
   }
@@ -49,7 +50,7 @@
 
     @media (max-width: 600px) {
       border-radius: 5px;
-      padding: 20px;
+      padding: 30px 20px;
     }
   }
 

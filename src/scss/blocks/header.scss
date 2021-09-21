@@ -45,6 +45,11 @@
   // .header__burger
 
   &__burger {
+    &._active {
+      span {
+        background-color: #fff;
+      }
+    }
   }
 }
 
@@ -52,8 +57,8 @@
   @media (max-width: $md3) {
     position: fixed;
     left: -100%;
-    top: 104px;
-    z-index: 2;
+    top: 0;
+    z-index: 3;
     overflow: auto;
     padding: 20px;
     width: 100%;
@@ -63,12 +68,6 @@
 
     &._active {
       left: 0;
-    }
-    @media (max-width: $md3) {
-      top: 80px;
-    }
-    @media (max-width: $md4) {
-      top: 60px;
     }
   }
 

@@ -7,6 +7,7 @@ const clickListner = () => {
         target.closest('.header__burger')
       ) {
         document.querySelector('.menu').classList.toggle('_active');
+        document.querySelector('.header__burger').classList.toggle('_active');
         document.body.classList.toggle('_lock');
       }
     });

@@ -74,6 +74,16 @@ body {
   }
 }
 
+.message {
+  &-error {
+    position: absolute;
+    left: 0;
+    top: 110%;
+    font-size: 12px;
+    color: rgb(250, 2, 2);
+  }
+}
+
 // .to {
 //   &-top {
 //     position: fixed;
